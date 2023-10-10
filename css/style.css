@@ -1,0 +1,19 @@
+.my-bg-pink{
+    background-color: rgb(177, 55, 171);
+}
+
+h3{
+    font-size: 1.3em;
+}
+
+th{
+    padding: 10px;
+}
+
+.my-bg-first-cell{
+    background-color: rgba(112, 96, 96, 0.452);
+}
+
+.biglietto{
+    height: 250px;
+}
