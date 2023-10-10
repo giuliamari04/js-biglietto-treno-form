@@ -8,6 +8,75 @@
     <title>Biglietto treno 2</title>
 </head>
 <body>
+    <div class="container">
+        <h1 class="text-uppercase">calcola il prezzo del tuo biglietto</h1>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <label for="nomeCognome" class="form-label">Nome Cognome</label>
+                    <input type="text" class="" id="nomeCognome" placeholder="" name="nomeCognome">
+                </div>
+
+                <div class="col">
+                    <label for="percorso" class="form-label">Km da percorrere</label>
+                    <input type="text" class="" id="km" name="km">
+                </div>
+
+                <div class="col">
+                    <label for="eta" class="form-label">Fascia d'età</label>
+                    <select name="eta" id="eta" name="eta" value="">
+                        <option value=""> seleziona</option>
+                        <option value="minorenne">minorenne</option>
+                        <option value="fasciamedia">(+18 e -65)</option>
+                        <option value="anziano">dai 65 in sù</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button id="genera">Genera</button>
+                </div>
+                <div class="col">
+                    <button id="reset">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-uppercase">il tuo biglietto</h2>
+
+        <div class="container-fluid">
+            <div class=""></div>
+            <table class="table-borderless">
+                <tr>
+                    <th class="bg-primary">
+                        <h3>nome passeggero</h3>
+                        <div class="risultato-nome"></div></th>
+                    <th>
+                        <h3>Offerta</h3>
+                    </th>
+                    <th>
+                        <h3>Carrozza</h3>
+                    </th>
+                    <th>
+                        <h3>codice CP</h3>
+                    </th>
+                    <th>
+                        <h3>Costo biglietto</h3>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th class="bg-primary"></th>
+                    <th class="risultato-eta"></th>
+                    <th class="risultato-vagone"></th>
+                    <th class="risultato-CP"></th>
+                    <th class="risultato-prezzo"></th>
+                </tr>
+            </table>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
