@@ -2,18 +2,25 @@
     background-color: rgb(177, 55, 171);
 }
 
+.my-bg-container{
+    background-color: rgba(49, 10, 47, 0.486);
+}
+
 h3{
     font-size: 1.3em;
 }
 
 th{
     padding: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
-
-.my-bg-first-cell{
-    background-color: rgba(112, 96, 96, 0.452);
+table{
+    width: 100%;
 }
 
 .biglietto{
     height: 250px;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 17%, rgba(171,29,253,1) 56%, rgba(252,69,226,1) 100%);
 }

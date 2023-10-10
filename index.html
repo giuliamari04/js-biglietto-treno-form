@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto treno 2</title>
 </head>
-<body>
-    <div class="container text-light my-bg-pink">
+<body class="my-bg-pink">
+    <div class="container text-light my-bg-container mt-4 p-5 ">
         <h1 class="text-uppercase text-center">calcola il prezzo del tuo biglietto</h1>
 
         <div class="container-fluid ">
             <div class="row m-2">
-                <div class="col-4">
-                    <label for="nomeCognome" class="form-label">Nome Cognome</label>
-                    <input type="text" class="" id="nomeCognome" placeholder="" name="nomeCognome">
+                <div class="col">
+                    <label for="nomeCognome" class="form-label">Nome Cognome</label><br>
+                    <input type="text" class="bg-black text-light" id="nomeCognome" placeholder="" name="nomeCognome">
                 </div>
 
-                <div class="col-4">
-                    <label for="percorso" class="form-label">Km da percorrere</label>
-                    <input type="text" class="" id="km" name="km">
+                <div class="col">
+                    <label for="percorso" class="form-label">Km da percorrere</label><br>
+                    <input type="text" class="bg-black text-light" id="km" name="km" >
                 </div>
 
-                <div class="col-4">
+                <div class="col">
                     <label for="eta" class="form-label">Fascia d'età</label>
                     <br>
-                    <select name="eta" id="eta" name="eta" value="">
+                    <select name="eta" id="eta" name="eta" value="" class="form-select bg-black text-light">
                         <option value=""> seleziona</option>
                         <option value="minorenne">minorenne</option>
                         <option value="fasciamedia">(+18 e -65)</option>
@@ -37,15 +37,15 @@
 
             <div class="row m-2">
                 <div class="col d-flex justify-content-center">
-                    <button id="genera" class="btn btn-dark">Genera</button>
-                    <button id="reset" class="btn btn-danger" >Annulla</button>
+                    <button id="genera" class="btn btn-dark mx-2">Genera</button>
+                    <button id="reset" class="btn btn-danger mx-2" >Annulla</button>
                 </div>
             </div>
         </div>
 
         
 
-        <div class="container-fluid biglietto" >
+        <div class="container-fluid biglietto " >
            
         </div>
     </div>

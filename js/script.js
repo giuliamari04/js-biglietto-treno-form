@@ -83,7 +83,7 @@ buttonGenera.addEventListener('click', function () {
      </tr>
 
      <tr>
-         <th class="my-bg-first-cell"></th>
+         <th></th>
          <th>${etaPasseggero}</th>
          <th >${randomNumberVagone}</th>
          <th > ${randomNumberCP}</th>
