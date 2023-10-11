@@ -4,6 +4,8 @@
 
 const buttonGenera = document.getElementById('genera');
 const buttonreset = document.getElementById('reset');
+let risultatonome = document.querySelector('.biglietto');
+let errore = document.querySelector('.error');
 
 
 buttonreset.addEventListener('click', function () {
@@ -15,7 +17,8 @@ buttonreset.addEventListener('click', function () {
     kmInput.value = '';
     etaSelect.value = '';
 
-   
+    risultatonome.classList.add('d-none');
+    errore.classList.add('d-none');
 
 });
 
@@ -23,15 +26,16 @@ buttonGenera.addEventListener('click', function () {
     let nome = document.getElementById('nomeCognome').value;
     let percorso = parseInt(document.getElementById('km').value);
     let etaPasseggero = document.getElementById('eta').value;
-
-    let risultatonome = document.querySelector('.biglietto');
+    risultatonome.classList.remove('d-none');
+    
 
     console.log('nome:',nome,'perorso:',percorso,'ed età:',etaPasseggero);
 
     let prezzoBiglietto = 0.21;
     let prezzoPercorso = prezzoBiglietto * percorso;
-   if(nome ==='' || percorso === '' || etaPasseggero ===''){
-    alert('errore dati');
+   if(nome ==='' || percorso === '' || etaPasseggero ==='' || percorso <= 0 || isNaN(percorso) ){
+    errore.classList.remove('d-none');
+    errore.innerHTML = ` errore dati. fai click su annulla e riprova`;
    }else{
     
     
@@ -65,6 +69,7 @@ buttonGenera.addEventListener('click', function () {
 
      risultatonome.innerHTML =
      `
+     <div>
      <h2 class="text-uppercase text-center">il tuo biglietto</h2>
      <table class="m-2 border-1">
      <tr>
@@ -93,6 +98,7 @@ buttonGenera.addEventListener('click', function () {
          <th >${prezzoFormattato}€</th>
      </tr>
  </table>
+ </div>
  `;
     
    }
