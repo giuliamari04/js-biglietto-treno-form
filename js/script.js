@@ -55,10 +55,13 @@ buttonGenera.addEventListener('click', function () {
       }
     
       let randomNumberVagone = getRandomNumber(1, 13);
-      console.log(randomNumberVagone);
+      console.log('Numero vagone :',randomNumberVagone);
 
       let randomNumberCP = getRandomNumber(10000, 99999);
-      console.log(randomNumberVagone);
+      console.log('Numero CP',randomNumberCP);
+
+      console.log('Prezzo del biglietto: ',prezzoFormattato);
+      
 
      risultatonome.innerHTML =
      `
